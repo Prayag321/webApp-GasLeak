@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.headline{
+    margin-right: 15px;
+}
+
+        /* navbar*/
+.logo{
+    margin: 0vw 5vw;
+
+}
+
+.nav-s1{
+    height: 1.7em;
+}
+/* .nav-s2{
+    height: 1.7em;
+    po
+} */
+.list-item:hover{
+    color: #f97918;
+}
+.qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9vw;
+    margin-top: 10px;
+    text-align: center;
+}
+.qr img{
+    height:78px;
+    width: 78px;
+    border: 2px solid ;
+}
+.qr p{
+    font-size:1rem;
+}
+.list{
+ font-size: 1.3rem;
+}
+
+
+
+                        /*main section*/
+
+/*carousel*/
+.carousel-image{
+    height: 22rem;
+
+
+}
+.bg1{
+    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg2{
+    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg3{
+    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* manual */
+.manual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: cyan;
+    max-height: 70vh;
+}
+.heading{
+
+}
+.heading span{
+    display: inline-block;
+    color: #f97918;
+    font-size: 2.2rem;
+}
+.heading h2{
+    display: inline;
+}
+
+.card-container{
+    background-color: rgb(64, 68, 68);
+    height: 444px;
+    width: 100%;
+}
+.card-1{
+    
+}
+
+
+
+                /*Footer */
+.footer1{
+    background-color: rgb(6, 6, 6);
+    height: 70px;
+    width: 100vw;
+    
+}
