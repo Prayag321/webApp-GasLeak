@@ -1,30 +1,33 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-.headline{
+
+.headline {
     margin-right: 15px;
 }
 
-        /* navbar*/
-.logo{
+/* navbar*/
+.logo {
     margin: 0vw 5vw;
 
 }
 
-.nav-s1{
+.nav-s1 {
     height: 1.7em;
 }
+
 /* .nav-s2{
     height: 1.7em;
     po
 } */
-.list-item:hover{
+.list-item:hover {
     color: #f97918;
 }
-.qr{
+
+.qr {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,94 +36,375 @@
     margin-top: 10px;
     text-align: center;
 }
-.qr img{
-    height:78px;
+
+.qr img {
+    height: 78px;
     width: 78px;
-    border: 2px solid ;
+    border: 2px solid;
 }
-.qr p{
-    font-size:1rem;
+
+.qr p {
+    font-size: 1rem;
 }
-.list{
- font-size: 1.3rem;
+
+.list {
+    font-size: 1.3rem;
 }
 
 
 
-                        /*main section*/
+/*main section*/
 
 /*carousel*/
-.carousel-image{
+.carousel-image {
     height: 22rem;
 
 
 }
-.bg1{
+
+.bg1 {
     background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.bg2{
+
+.bg2 {
     background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.bg3{
+
+.bg3 {
     background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* manual */
-.manual{
+.manual {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: cyan;
+    min-height: 200px;
+
     /* max-height: vh; */
 }
-.heading{
 
+.heading {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.heading span{
+
+.heading span {
     display: inline-block;
-    color: #f97918;
+    color: rgb(249, 121, 24);
     font-size: 2.2rem;
 }
-.heading h2{
+
+.heading h2 {
     display: inline;
+    line-height: 14px;
 }
 
-.card-container{
+.card-container {
     display: flex;
-    background-color: rgb(64, 68, 68);
-    height: 70%;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap:wrap ;
-    min-height: 60vh;
-    
+    flex-wrap: wrap;
+    min-height: 50vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
-.card{
-    width: 180px;
-    height: 200px;
-    background-color: #793232;
-    border: black solid 3px;
+.setup-info{
+    margin: 40px 0px;
+    opacity: 0.7;
+    line-height: 25px;
+    text-align: center;
+}
+
+.card {
+    width: 197px;
+    height: 242px;
     box-sizing: border-box;
-
- 
+    margin-right: 18px;
+    margin-bottom: 18px;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(249, 121, 24, 0.445);
+    transform: scale(1.05);
+}
+
+/* sensor-data */
+.data-container {
+    min-height: 70vh;
+    width: 100%;
+    background-color: #f9f8fd;;
+    padding-top: 20px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
 
 
-                /*Footer */
-.footer1{
+}
+
+.data-card {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 130px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.data-card:hover{
+    transform: scale(1.05);
+}
+
+.logos {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.image1 {
+    background: url(../src/thermometer.png);
+    background-size: cover;
+}
+
+.image2 {
+    background: url(../src/gauge.png);
+    background-size: cover;
+}
+
+.image3 {
+    background: url(../src/gas.png);
+    background-size: cover;
+}
+
+.image4 {
+    background: url(../src/thermometer.png);
+    background-size: cover;
+}
+
+.card-des {
+    height: 100px;
+    width: 130px;
+    line-height: 8px;
+    padding-top: 39px;
+    padding-left: 10px;
+
+}
+
+.card-des p {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.card-des div {
+    opacity: 0.5;
+    line-height: 13px;
+}
+
+/* alerts */
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+                /* contact */
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.card-client {
+    background: #2cb5a0;
+    width: 13rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  
+  .card-client:hover {
+    transform: translateY(-10px);
+  }
+  
+  .user-picture {
+
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #7cdacc;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
+  .prayag{
+    background-image: url(../src/nana\ \(1\).png);
+    background-size: cover;
+  }
+  .aditya{
+    background-image: url(../src/aditya.jpg);
+    background-size: cover;
+  }
+  .rohan{
+    background-image: url(../src/nana\ \(1\).png);
+    background-size: cover;
+  }
+
+  
+  
+  .name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  
+  .social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #7cdacc;
+  }
+  
+  .social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+  }
+  
+  /*-- Tooltip Social Media --*/
+  .tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+  
+  .tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+  
+  .social-media a .tooltip-social:after {
+    border-top-color: #262626;
+  }
+  
+  .social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+  }
+
+/*Footer */
+.footer1 {
     background-color: rgb(6, 6, 6);
     height: 70px;
-    width: 100vw;
-    
+    width: 100%;
+
+}
+
+/* media */
+@media screen and (max-width:600px) {
+    .card {
+        transform: scale(0.9);
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+
+    .data-card {
+        margin: 5px;
+        width: 196px;
+        height: 93px;
+    }
+    .logos{
+        margin: 0;
+    }
+    /* contact cards */
+    .card-client{
+        transform: scale(0.6);
+    }
+    .card-client:hover {
+        transform: translateY(-5px);
+      }
+}
+@media screen and (max-width:800px) {
+    .card-client{
+        transform: scale(0.8);
+    }
 }
