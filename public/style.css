@@ -5,13 +5,18 @@
     box-sizing: border-box;
 }
 
+
 .headline {
     margin-right: 15px;
 }
 
 /* navbar*/
-.logo {
-    margin: 0vw 5vw;
+.logo img {
+    /* margin: 0vw 5vw; */
+    height: 118px;
+    width: 380px;
+    object-fit: cover;
+
 
 }
 
@@ -20,11 +25,16 @@
 }
 
 /* .nav-s2{
-    height: 1.7em;
-    po
+    position: fixed;
+    top: 0;
+    z-index: 1;
+} */
+/* main{
+position: absolute;
+top: 128px;
 } */
 .list-item:hover {
-    color: #f97918;
+    color: #00C6FE;
 }
 
 .qr {
@@ -57,13 +67,11 @@
 
 /*carousel*/
 .carousel-image {
-    height: 22rem;
-
-
+    height: 30rem;
 }
 
 .bg1 {
-    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-image: url("../src/GAs\ leak.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -84,16 +92,16 @@
 .manual {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
     align-items: center;
-    min-height: 200px;
+    min-height: 612px;
 
     /* max-height: vh; */
 }
 
 .heading {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -121,7 +129,8 @@
     margin-bottom: 20px;
 
 }
-.setup-info{
+
+.setup-info {
     margin: 40px 0px;
     opacity: 0.7;
     line-height: 25px;
@@ -135,12 +144,12 @@
     margin-right: 18px;
     margin-bottom: 18px;
     box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+        -20px -20px 60px #ffffff;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(249, 121, 24, 0.445);
+    box-shadow: 0px 0px 30px 1px rgba(0, 199, 254, 0.535);
     transform: scale(1.05);
 }
 
@@ -148,7 +157,7 @@
 .data-container {
     min-height: 70vh;
     width: 100%;
-    background-color: #f9f8fd;;
+    background-color: #f9f8fd;
     padding-top: 20px;
 }
 
@@ -172,11 +181,11 @@
     padding: 10px;
     margin: 5px;
     box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+        -20px -20px 60px #ffffff;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.data-card:hover{
+.data-card:hover {
     transform: scale(1.05);
 }
 
@@ -232,11 +241,17 @@
     justify-content: center;
     margin: 0;
     width: 100%;
+    min-height: 100px;
 }
 
-                /* contact */
+/* chart */
+.chart {
+    min-height: 500px;
+}
 
-.contact{
+/* contact */
+
+.contact {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -245,6 +260,7 @@
     align-content: center;
     justify-content: space-evenly;
 }
+
 .card-client {
     background: #2cb5a0;
     width: 13rem;
@@ -260,13 +276,13 @@
     font-family: "Poppins", sans-serif;
     transform: scale(1.2);
     transition: all 0.3s ease;
-  }
-  
-  .card-client:hover {
+}
+
+.card-client:hover {
     transform: translateY(-10px);
-  }
-  
-  .user-picture {
+}
+
+.user-picture {
 
     overflow: hidden;
     object-fit: cover;
@@ -279,62 +295,65 @@
     align-items: center;
     margin: auto;
 
-  }
-  .prayag{
+}
+
+.prayag {
     background-image: url(../src/nana\ \(1\).png);
     background-size: cover;
-  }
-  .aditya{
+}
+
+.aditya {
     background-image: url(../src/aditya.jpg);
     background-size: cover;
-  }
-  .rohan{
+}
+
+.rohan {
     background-image: url(../src/nana\ \(1\).png);
     background-size: cover;
-  }
+}
 
-  
-  
-  .name-client {
+
+
+.name-client {
     margin: 0;
     margin-top: 20px;
     font-weight: 600;
     font-size: 18px;
-  }
-  
-  .name-client span {
+}
+
+.name-client span {
     display: block;
     font-weight: 200;
     font-size: 16px;
-  }
-  
-  .social-media:before {
+}
+
+.social-media:before {
     content: " ";
     display: block;
     width: 100%;
     height: 2px;
     margin: 20px 0;
     background: #7cdacc;
-  }
-  
-  .social-media a {
+}
+
+.social-media a {
     position: relative;
     margin-right: 15px;
     text-decoration: none;
     color: inherit;
-  }
-  
-  .social-media a:last-child {
+}
+
+.social-media a:last-child {
     margin-right: 0;
-  }
-  
-  .social-media a svg {
+}
+
+.social-media a svg {
     width: 1.1rem;
     fill: currentColor;
-  }
-  
-  /*-- Tooltip Social Media --*/
-  .tooltip-social {
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
     background: #262626;
     display: block;
     position: absolute;
@@ -349,9 +368,9 @@
     transform: translate(-50%, -90%);
     transition: all 0.2s ease;
     z-index: 1;
-  }
-  
-  .tooltip-social:after {
+}
+
+.tooltip-social:after {
     content: " ";
     position: absolute;
     bottom: 1px;
@@ -360,16 +379,16 @@
     border-width: 10px 10px 0 10px;
     border-color: transparent;
     transform: translate(-50%, 100%);
-  }
-  
-  .social-media a .tooltip-social:after {
+}
+
+.social-media a .tooltip-social:after {
     border-top-color: #262626;
-  }
-  
-  .social-media a:hover .tooltip-social {
+}
+
+.social-media a:hover .tooltip-social {
     opacity: 1;
     transform: translate(-50%, -130%);
-  }
+}
 
 /*Footer */
 .footer1 {
@@ -392,19 +411,27 @@
         width: 196px;
         height: 93px;
     }
-    .logos{
+
+    .logos {
         margin: 0;
     }
+
     /* contact cards */
-    .card-client{
+    .card-client {
         transform: scale(0.6);
     }
+
     .card-client:hover {
         transform: translateY(-5px);
-      }
+    }
+
+    .carousel-image {
+        height: 22rem;
+    }
 }
+
 @media screen and (max-width:800px) {
-    .card-client{
+    .card-client {
         transform: scale(0.8);
     }
 }

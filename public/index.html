@@ -17,15 +17,16 @@
 </head>
 
 <body>
+<main>
   <header>
-    <div class="nav-s1 bg-success d-flex flex-row-reverse">
-      <p class="headline">Group No. 5</p>
+    <!-- <div class="nav-s1 bg-success d-flex flex-row-reverse">
+      <p class="headline">Group No. 5</p> -->
     </div>
-    <nav class=" navbar navbar-expand-lg mh-10 bg-body-tertiary bg-dark nav-s2 shadow">
+    <nav class=" navbar navbar-expand-lg mh-10 bg-white nav-s2 navbar-white w-100 ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <div class="logo"><img
-              src="https://www.aarogyasetu.gov.in/wp-content/themes/setu/assets/images/aarogya_logo.png" alt=""
+              src="../src/Purple and Blue Modern Gradient Health Products Health and Fitness Animated Logo (1).gif" alt=""
               title=""></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -39,13 +40,13 @@
               <a class=" list-item nav-link" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="list-item nav-link  " href="">MANUAL</a>
+              <a class="list-item nav-link  " href="#manual">MANUAL</a>
             </li>
             <li class="nav-item">
-              <a class=" list-item nav-link" href="#">DATA</a>
+              <a class=" list-item nav-link" href="#data">DATA</a>
             </li>
             <li class="nav-item">
-              <a class="list-item nav-link" href="#">CONTACT US</a>
+              <a class="list-item nav-link" href="#contact">CONTACT US</a>
             </li>
           </ul>
           <div class="qr">
@@ -60,7 +61,7 @@
 
 
   <!-- carousel -->
-  <div class="images">
+  <div class="images padding">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -95,7 +96,7 @@
   </div>
 
   <!-- set up instruction -->
-  <div class="manual">
+  <div class="manual" id="manual">
     <a ></a>
     <div class="heading">
       <span>-</span>
@@ -114,8 +115,8 @@
       *Choose a suitable spot in your kitchen for system installation, preferably near the gas cylinder and stove for efficient monitoring. Place the gas sensor strategically to detect potential gas leaks, either close to the stove or in a high-risk area. Ensure compliance with safety standards during installation. Keep the system away from heat, flames, and water sources to prevent damage. Test the installation thoroughly for accuracy.</div>
   </div>
 
-  <!-- main data -->
-  <div class="data-container">
+  <!-- main data -real time sensor data-->
+  <div class="data-container" id="data">
     <div class="heading">
       <span>-</span>
       <h2>Real Time Sensor Information</h2>
@@ -160,10 +161,12 @@
 
 <!-- contsct us  -->
 
-<div class="heading">
+  <div class="heading" id="contact">
   <span>-</span>
-  <h2>Contact Us</h2></div>
-<div class="contact">
+  <h2>Contact Us</h2>
+  </div>
+
+  <div class="contact">
   <div class="card-client">
     <div class="user-picture prayag">
 
@@ -262,7 +265,7 @@
         </a>
     </div>
 </div>
-</div>
+  </div>
 
 <!-- footer -->
   <footer>
@@ -275,5 +278,5 @@
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
-
+</main>
 </html>
