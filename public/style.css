@@ -3,9 +3,8 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
-
 .headline {
     margin-right: 15px;
 }
@@ -13,16 +12,17 @@
 /* navbar*/
 .logo img {
     /* margin: 0vw 5vw; */
-    height: 118px;
-    width: 380px;
+    height: 92px;
+    width: 384px;
     object-fit: cover;
 
 
 }
 
+/* 
 .nav-s1 {
     height: 1.7em;
-}
+} */
 
 /* .nav-s2{
     position: fixed;
@@ -43,18 +43,18 @@ top: 128px;
     align-items: center;
     justify-content: center;
     margin-right: 9vw;
-    margin-top: 10px;
     text-align: center;
 }
 
 .qr img {
-    height: 78px;
-    width: 78px;
+    height: 60px;
+    width: 60px;
     border: 2px solid;
 }
 
 .qr p {
     font-size: 1rem;
+    margin: 0;
 }
 
 .list {
@@ -249,13 +249,32 @@ top: 128px;
     min-height: 500px;
 }
 
+
+/* map */
+#map {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+#map iframe {
+    min-height: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* contact */
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 500px;
+    min-height: 84vh;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
@@ -390,11 +409,46 @@ top: 128px;
     transform: translate(-50%, -130%);
 }
 
+::-webkit-scrollbar {
+    width: .9rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(24 24 29)
+}
+
+::-webkit-scrollbar-thumb {
+    background:#00C6FE;  
+    border: 5px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+/* up button */
+.goupbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+.goupbtn img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 31%;
+    padding: 4.5px;
+    background-color: #0093ffb8;
+}
+
 /*Footer */
 .footer1 {
     background-color: rgb(6, 6, 6);
     height: 70px;
     width: 100%;
+    color: #ffffff;
 
 }
 
@@ -426,7 +480,7 @@ top: 128px;
     }
 
     .carousel-image {
-        height: 22rem;
+        height: 20rem;
     }
 }
 
