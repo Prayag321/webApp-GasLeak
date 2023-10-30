@@ -2,10 +2,12 @@
 gsap.from(".goupbtn", {
     opacity: 0,
     duration: .9,
+    y:50,
     scrollTrigger: {
-        trigger: ".goupbtn",
+        trigger: "#manual",
         scroller: "body",
-        start: "top 10%",
-        toggleActions: "play none reverse",
+        start: "top 30%",
+        markers:"true",
+        toggleActions: "play none none reverse",
     }
 })
