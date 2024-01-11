@@ -5,6 +5,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+*::selection {
+    color: red;
+    background-color: black;
+}
+
 .headline {
     margin-right: 15px;
 }
@@ -77,13 +83,13 @@ top: 128px;
 }
 
 .bg2 {
-    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-image: url("../src/GAs\ leak2.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bg3 {
-    background-image: url("https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=");
+    background-image: url("../src/GAs\ leak3.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -155,6 +161,10 @@ top: 128px;
 
 /* sensor-data */
 .data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     min-height: 70vh;
     width: 100%;
     background-color: #f9f8fd;
@@ -252,7 +262,7 @@ top: 128px;
 
 /* map */
 #map {
-    min-height: 80vh;
+    /* min-height: 80vh; */
     display: flex;
     flex-direction: column;
     background-color: #F5F5F5;
@@ -262,10 +272,7 @@ top: 128px;
     min-height: 450px;
     padding: 5px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+    margin: 30px 0px;
 }
 
 /* contact */
@@ -327,7 +334,7 @@ top: 128px;
 }
 
 .rohan {
-    background-image: url(../src/nana\ \(1\).png);
+    background-image: url(../src/rohan.jpg);
     background-size: cover;
 }
 
@@ -418,11 +425,12 @@ top: 128px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background:#00C6FE;  
+    background: #00C6FE;
     border: 5px solid transparent;
     border-radius: 9px;
     background-clip: content-box;
 }
+
 /* up button */
 .goupbtn {
     position: fixed;
@@ -434,7 +442,8 @@ top: 128px;
     text-align: center;
     line-height: 50px;
 }
-.goupbtn img{
+
+.goupbtn img {
     width: 50px;
     height: 50px;
     object-fit: cover;
@@ -445,10 +454,14 @@ top: 128px;
 
 /*Footer */
 .footer1 {
+    display: flex;
     background-color: rgb(6, 6, 6);
     height: 70px;
     width: 100%;
     color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
 
 }
 
@@ -472,7 +485,7 @@ top: 128px;
 
     /* contact cards */
     .card-client {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
 
     .card-client:hover {
@@ -482,10 +495,19 @@ top: 128px;
     .carousel-image {
         height: 20rem;
     }
+
+    .goupbtn {
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media screen and (max-width:800px) {
     .card-client {
-        transform: scale(0.8);
+        transform: scale(0.9);
+    }
+
+    .data-card {
+        box-shadow: 6px 6px 20px #bebebe;
     }
 }

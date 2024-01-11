@@ -1,5 +1,9 @@
 function getData() {
     let temp = document.getElementById("temperature")
+    let humid = document.getElementById("humidity")
+    let gas = document.getElementById("gas_concentration")
+
+
     let data = fetch('https://dummyjson.com/products/2');
     data.then((val) => {
         return val.json();
@@ -10,3 +14,4 @@ function getData() {
 
 }
 // setInterval(getData,1000); //for execution 
+
