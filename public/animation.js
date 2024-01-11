@@ -7,7 +7,6 @@ gsap.from(".goupbtn", {
         trigger: "#manual",
         scroller: "body",
         start: "top 30%",
-        markers:"false",
         toggleActions: "play none none reverse",
     }
 })
