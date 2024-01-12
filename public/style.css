@@ -439,8 +439,8 @@ top: 128px;
     bottom: 40px;
     right: 50px;
     text-decoration: none;
-    text-align: center;
-    line-height: 50px;
+    /* text-align: center;
+    line-height: 50px; */
 }
 
 .goupbtn img {
@@ -461,12 +461,18 @@ top: 128px;
     color: #ffffff;
     justify-content: center;
     align-items: center;
-    padding: 0px 5px;
+    padding: 0px 9px;
 
 }
 
-/* media */
+            /* media */
+ /* small display */
 @media screen and (max-width:600px) {
+    .logo img{
+        height: 90px;
+        width: 290px;
+        object-fit: cover;
+    }
     .card {
         transform: scale(0.9);
         margin-right: 2px;
@@ -497,11 +503,16 @@ top: 128px;
     }
 
     .goupbtn {
+        width: 70px;
+        height: 70px;
         bottom: 20px;
         right: 20px;
     }
+    .footer1{
+        padding-right: 45px;
+    }
 }
-
+ /* medium display */
 @media screen and (max-width:800px) {
     .card-client {
         transform: scale(0.9);
