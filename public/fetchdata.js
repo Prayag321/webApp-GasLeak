@@ -7,6 +7,7 @@ let preousTime = "0";
 function getData() {
 
     // https://dummyjson.com/products/2
+    // 7veY3rCXY872zflm  atlas pass
     let data = fetch('http://localhost:3000/api/sensordata/');
     data.then((val) => {
         return val.json();
@@ -22,6 +23,8 @@ function getData() {
             alert.textContent = "Device is dissconnected";
             alert.style.color = "red"
             alert.style.fontSize = "20px"
+            alert.style.display = "flex"
+
         }
     })
 

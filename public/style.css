@@ -178,6 +178,7 @@ top: 128px;
     align-items: center;
     min-height: 200px;
     width: 100%;
+    margin: 10px 10px;
 
 
 }
@@ -246,7 +247,7 @@ top: 128px;
 
 /* alerts */
 .alert {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -257,6 +258,12 @@ top: 128px;
 /* chart */
 .chart {
     min-height: 500px;
+    background-color: red;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin: 30px 0px;
 }
 
 
@@ -272,7 +279,7 @@ top: 128px;
     min-height: 450px;
     padding: 5px;
     border-radius: 10px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 /* contact */
@@ -465,14 +472,28 @@ top: 128px;
 
 }
 
-            /* media */
- /* small display */
+/* media */
+
+
+/* medium display */
+@media screen and (max-width:800px) {
+    .card-client {
+        transform: scale(0.9);
+    }
+
+    .data-card {
+        box-shadow: 6px 6px 20px #bebebe;
+    }
+}
+
+/* small display */
 @media screen and (max-width:600px) {
-    .logo img{
+    .logo img {
         height: 90px;
         width: 290px;
         object-fit: cover;
     }
+
     .card {
         transform: scale(0.9);
         margin-right: 2px;
@@ -490,9 +511,9 @@ top: 128px;
     }
 
     /* contact cards */
-    .card-client {
+    /* .card-client {
         transform: scale(0.7);
-    }
+    } */
 
     .card-client:hover {
         transform: translateY(-5px);
@@ -508,17 +529,33 @@ top: 128px;
         bottom: 20px;
         right: 20px;
     }
-    .footer1{
+
+    .footer1 {
         padding-right: 45px;
     }
 }
- /* medium display */
-@media screen and (max-width:800px) {
-    .card-client {
-        transform: scale(0.9);
-    }
 
-    .data-card {
-        box-shadow: 6px 6px 20px #bebebe;
+
+
+/* smaller sisplay */
+@media screen and (max-width:395px) {
+    .heading{
+        padding: 0px 5px;
     }
+    .data-card { 
+        /* margin-bottom: 4px;  */
+        margin-top: 10px;
+        width: 351px;
+        height: 105px;
+        margin-bottom: 11px; 
+        /* background-color: red; */
+    }
+    .logos {
+        height: 65px;
+        width: 64px;
+        margin-left: 20px;
+        margin-right: 19px;
+      }
+    
+
 }
