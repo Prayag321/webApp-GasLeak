@@ -207,8 +207,10 @@ top: 128px;
     place-content: center;
     place-items: center;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 20px;
+    cursor: pointer;
 }
+
 
 @keyframes switch {
     from {
@@ -227,7 +229,7 @@ top: 128px;
     background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
     height: 240%;
     left: 30%;
-    animation: switch 3s linear infinite;
+    animation: switch 3s cubic-bezier(.65,.05,.36,1) infinite;
     /* transition: all 0.2s linear; */
 }
 
