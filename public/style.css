@@ -183,6 +183,7 @@ top: 128px;
 
 }
 
+
 .data-card {
     display: flex;
     align-items: center;
@@ -198,6 +199,50 @@ top: 128px;
 
 .data-card:hover {
     transform: scale(1.05);
+}
+
+/* motor status */
+#motor_switch {
+    position: relative;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+@keyframes switch {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#motor_switch::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 240%;
+    left: 30%;
+    animation: switch 3s linear infinite;
+    /* transition: all 0.2s linear; */
+}
+
+#motor_switch::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+#motor_switch .card-des {
+    color: #00C6FE;
+
 }
 
 .logos {
@@ -222,7 +267,7 @@ top: 128px;
 }
 
 .image4 {
-    background: url(src/thermometer.png);
+    background: url(src/electric-motor.png);
     background-size: cover;
 }
 
@@ -232,6 +277,7 @@ top: 128px;
     line-height: 8px;
     padding-top: 39px;
     padding-left: 10px;
+    z-index: 1;
 
 }
 
@@ -267,7 +313,8 @@ top: 128px;
     box-sizing: border-box;
 
 }
-.chart iframe{
+
+.chart iframe {
     min-height: 600px;
     /* height: 100%; */
     width: 100%;
@@ -505,6 +552,10 @@ top: 128px;
         object-fit: cover;
     }
 
+    .carousel-image {
+        height: 20rem;
+    }
+
     .card {
         transform: scale(0.9);
         margin-right: 2px;
@@ -521,6 +572,10 @@ top: 128px;
         margin: 0;
     }
 
+    #motor_switch::before {
+        width: 80px;
+    }
+
     /* contact cards */
     /* .card-client {
         transform: scale(0.7);
@@ -530,9 +585,7 @@ top: 128px;
         transform: translateY(-5px);
     }
 
-    .carousel-image {
-        height: 20rem;
-    }
+
 
     .goupbtn {
         width: 70px;
@@ -550,23 +603,30 @@ top: 128px;
 
 /* smaller sisplay */
 @media screen and (max-width:395px) {
-    .heading{
+    .heading {
         padding: 0px 5px;
     }
-    .data-card { 
+
+    .data-card {
         /* margin-bottom: 4px;  */
         margin-top: 10px;
         width: 351px;
         height: 105px;
-        margin-bottom: 11px; 
+        margin-bottom: 11px;
         /* background-color: red; */
     }
+    #motor_switch::before {
+        width: 80px;
+        height: 350%;
+        left: 39%;
+    }
+
     .logos {
         height: 65px;
         width: 64px;
         margin-left: 20px;
         margin-right: 19px;
-      }
-    
+    }
+
 
 }
