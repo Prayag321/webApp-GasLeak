@@ -6,7 +6,7 @@ let preousTime = "0";
 
 function getData() {
 
-    // https://dummyjson.com/products/2    test api
+    // https://dummyjson.com/products/2
     // 7veY3rCXY872zflm  atlas pass
     let data = fetch('http://localhost:3000/api/sensordata/');
     data.then((val) => {
@@ -14,11 +14,10 @@ function getData() {
     }).then((val) => {
         if (preousTime !== (val.dbData[0].createdAt.split('T')[1]) ) {
             temp.textContent = val.dbData[0].temperature;
-            humid.textContent = val.dbData[0].humidity;
+            humid.textContent = val.dbData[0].temperature;
             gas.textContent = val.dbData[0].gasreading;
             preousTime = val.dbData[0].createdAt.split('T')[1];
             alert.textContent = "Space for alert";
-
         }
         else{
             alert.textContent = "Device is dissconnected";
