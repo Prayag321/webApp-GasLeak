@@ -44,20 +44,20 @@ gsap.from(".card-container", {
     }
 });
 
-// real time sensor info
-gsap.from(".card-client", {
-    opacity: 0,
-    y: 100,
-    stagger: 0.2,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".cantactus",
-        start: "top 40%",
-        end: "bottom 80%",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-        markers:"true"
 
-    }
-});
+// gsap.from(".card-client", {
+//     opacity: 0,
+//     y: 100,
+//     stagger: 0.2,
+//     duration: 1,
+//     scrollTrigger: {
+//         trigger: ".cantactus",
+//         start: "top 40%",
+//         end: "bottom 80%",
+//         scrub: 1,
+//         toggleActions: "play none none reverse",
+//         markers:"true"
+
+//     }
+// });
 
