@@ -47,13 +47,13 @@ gsap.from(".card-container", {
 
 // gsap.from(".card-client", {
 //     opacity: 0,
-//     y: 100,
+//     y: 80,
 //     stagger: 0.2,
 //     duration: 1,
 //     scrollTrigger: {
 //         trigger: ".cantactus",
 //         start: "top 40%",
-//         end: "bottom 80%",
+//         end: "bottom 90%",
 //         scrub: 1,
 //         toggleActions: "play none none reverse",
 //         markers:"true"
