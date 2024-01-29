@@ -8,6 +8,7 @@ gsap.from(".goupbtn", {
         scroller: "body",
         start: "top 30%",
         toggleActions: "play none none reverse",
+        
     }
 })
 
@@ -39,7 +40,9 @@ gsap.from(".card-container", {
         start: "top 80%",
         end: "bottom 60%",
         scrub: 1,
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
+        
+       
 
     }
 });

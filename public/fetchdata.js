@@ -3,6 +3,7 @@ let humid = document.getElementById("humidity");
 let gas = document.getElementById("gas_concentration");
 let alert = document.getElementById("alert");
 let preousTime = "0";
+let knobstatus = document.getElementById("motor_s");
 
 function getData() {
 
@@ -12,15 +13,16 @@ function getData() {
     data.then((val) => {
         return val.json();
     }).then((val) => {
-        if (preousTime !== (val.dbData[0].createdAt.split('T')[1]) ) {
+        if (preousTime !== (val.dbData[0].createdAt.split('T')[1])) {
             temp.textContent = val.dbData[0].temperature;
             humid.textContent = val.dbData[0].humidity;
             gas.textContent = val.dbData[0].gasreading;
+            knobstatus.textContent = val.dbData[0].knobstatus;
             preousTime = val.dbData[0].createdAt.split('T')[1];
             alert.textContent = "Space for alert";
 
         }
-        else{
+        else {
             alert.textContent = "Device is dissconnected";
             alert.style.color = "red"
             alert.style.fontSize = "20px"
@@ -28,6 +30,13 @@ function getData() {
 
         }
     })
+    .catch(error => {
+    console.error('Error fetching data:', error)
+    alert.textContent = "Device is dissconnected";
+    alert.style.color = "red"
+    alert.style.fontSize = "20px"
+    alert.style.display = "flex"
+});
 
 
 
