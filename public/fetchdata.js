@@ -32,7 +32,7 @@ function getData() {
             else{
                 knobstatus.textContent = "ON";
             }
-            alert.textContent = "Space for alert";
+            // alert.textContent = "";
 
         }
         else {

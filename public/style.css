@@ -315,21 +315,19 @@ top: 128px;
     border-radius: 10px;
     margin-top: 30px !important;
     /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 
 
 }
 
 .chart iframe {
     min-height: 400px;
-    /* height: 100%; */
-    /* width: 100%; */
     border-radius: 5px;
     overflow:hidden;
     border: 0px;
-    /* margin-bottom: -6px; */
-    padding: 5px;
-    /* background-color: rebeccapurple; */
-    display: flex;
+    /* padding: 5px; */
 }
 
 
@@ -353,6 +351,7 @@ top: 128px;
 .cantactus{
     width: 100%;
     background-color: white;
+    min-height: 100vh;
 }
 .contact {
     display: flex;
@@ -647,6 +646,12 @@ top: 128px;
     } */
     #map iframe {
         min-height: 450px;
+    }
+    .cantactus{
+        margin-bottom: 20px;  
+    }
+    .chart{
+        height: fit-content;
     }
 
 
