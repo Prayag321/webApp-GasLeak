@@ -33,7 +33,10 @@ function getData() {
                 knobstatus.textContent = "ON";
             }
             if (val.dbData[0].gasreading > 500) {
+                alert.style.display = "flex"
                 alert.textContent = "Gas is detected!";
+                alert.style.color = "red"
+                alert.style.fontSize = "20px"
             } else {
                 alert.textContent = "";
             }
@@ -50,10 +53,10 @@ function getData() {
     })
     .catch(error => {
     console.error('Error fetching data:', error)
+    alert.style.display = "flex"
     alert.textContent = `Server is not connected`;
     alert.style.color = "red"
     alert.style.fontSize = "20px"
-    alert.style.display = "flex"
 });
 
 
