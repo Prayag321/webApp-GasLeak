@@ -32,6 +32,11 @@ function getData() {
             else{
                 knobstatus.textContent = "ON";
             }
+            if (val.dbData[0].gasreading > 500) {
+                alert.textContent = "Gas is detected!";
+            } else {
+                alert.textContent = "";
+            }
             // alert.textContent = "";
 
         }
