@@ -50,18 +50,15 @@ top: 128px;
     justify-content: center;
     margin-right: 9vw;
     text-align: center;
+    
 }
 
 .qr img {
-    height: 60px;
-    width: 60px;
-    border: 2px solid;
+    height: 80px;
+    width: 80px;
+    border: none;
 }
 
-.qr p {
-    font-size: 1rem;
-    margin: 0;
-}
 
 .list {
     font-size: 1.3rem;
@@ -169,6 +166,10 @@ background-size: cover;
 }
 .card-4{
 background-image: url("../public/src/gas1.jpg");
+background-size:223px 246px;
+}
+.card-5{
+background-image: url("../public/src/gas5.jpg");
 background-size:223px 246px;
 }
 
