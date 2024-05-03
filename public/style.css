@@ -125,14 +125,15 @@ top: 128px;
 
 .card-container {
     display: flex;
-    /* width: 100%; */
-    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
     min-height: 50vh;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding: 0px 155px;
 
 }
 
@@ -152,6 +153,23 @@ top: 128px;
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none    ;
+}
+.card-1{
+background-image: url("../public/src/gas4.jpg");
+background-size: cover;
+}
+.card-2{
+background-image: url("../public/src/gas3.jpg");
+background-size: cover;
+}
+.card-3{
+background-image: url("../public/src/gas2.jpg");
+background-size: cover;
+}
+.card-4{
+background-image: url("../public/src/gas1.jpg");
+background-size:223px 246px;
 }
 
 .card:hover {
@@ -544,6 +562,13 @@ top: 128px;
 /* media */
 
 
+/* large display */
+@media screen and (max-width:1175px) {
+    .card-container{
+        padding: 0px;
+    }
+}
+
 /* medium display */
 @media screen and (max-width:800px) {
     .card-client {
@@ -552,6 +577,9 @@ top: 128px;
 
     .data-card {
         box-shadow: 6px 6px 20px #bebebe;
+    }
+    .card-container{
+        padding: 0px;
     }
 }
 
